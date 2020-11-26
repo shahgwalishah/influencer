@@ -1,0 +1,459 @@
+.customStyle{
+    width:100% !important;
+    background-color: #fff;
+    box-shadow: 1px 4px 12px 7px #e0e7eb;
+    padding-bottom: 25px;
+    padding-top: 20px;
+}
+.customCampaignH2{
+    padding: 0px 0px;
+    border-bottom: 3px solid #6d3d86;
+    margin: 12px 30px;
+    color: #454646;
+    font-size: 20px;
+    font-weight: 600;
+}
+.customRow{
+    padding: 6px 20px;
+}
+
+.box-shadow{
+    box-shadow: 5px 10px #e0e7eb;
+}
+.customP{
+    padding: 0px;
+    display: flex;
+}
+.customHandleClass{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.social-icons img{
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.social-icons{
+    padding-right: 15px;
+}
+.customMd2{
+    width:22%;
+    padding-right: 5px;
+}
+.customMd4{
+    padding-left: 25px;
+    padding-right: 5px;
+}
+.customMM{
+    margin-bottom: 15px;
+}
+.set-margin-S{
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.set-prefrence-p{
+    padding-right: 25px;
+}
+.customP-0{
+    padding: 0px;
+}
+.customMd4T{
+    width:37.333333%;
+}
+.customMargin{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.social-icons-target {
+    display: flex;
+    flex-direction: column;
+    width: 17%;
+    padding-right: 10px;
+    justify-content: center;
+}
+.social-icons-target span{
+    padding-left: 10px;
+}
+.social-icons-target div{
+    margin-bottom: 5px;
+}
+.bg-color-div h2{
+    color: #fff;
+    font-size: 15px;
+    margin: 0px;
+    font-weight: bold;
+    text-align: center;
+}
+.bg-color-div{
+    background-color: #6d3d86;
+    padding: 14px;
+}
+.custom-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.custom-pText{
+    font-size: 15px;
+    width: 233px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0px;
+}
+.custom-color{
+    color: #6d3d86;
+}
+.custom-uploaded-assets{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.hover-able:hover{
+    color: #000;
+    font-weight: 500;
+}
+
+/* my campaign css */
+
+    .customDesc12 {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .pColor{
+        color: #989898;
+        font-size: 14px;
+    }
+
+    .date-section{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+
+    .st-date{
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .en-date{
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .date-format{
+        font-weight: normal;
+        font-size:14px;
+    }
+
+    .campaign-M-disp{
+        margin-top: 20px;
+        font-weight: 200;
+        font-size: 14px;
+    }
+
+    .hasTags {
+        background: #eeeeee;
+        padding: 5px 10px;
+        color: #7e8f9b;
+        font-size: 12px;
+    }
+
+    .lab-my-campaign{
+        color: #6e3d86;
+    }
+
+    .social-icon-my-compaign{
+
+    }
+
+    .custom-social-links{
+        margin-top: 20px;
+    }
+    .y-Cam-h2{
+        font-weight: bold;
+        margin: 0px;
+        margin-right: 15px;
+        border-bottom: 3px solid #e39e65;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .custom-row-Cam{
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        justify-content: center !important;
+    }
+
+    .statistic{
+        margin: 0px;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 12px;
+    }
+
+    .total-reach{
+        margin-top: 12px;
+        font-weight: bold;
+    }
+
+    .total-reach-statistic{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .statistic-outer{
+        display: flex;
+        align-items: center;
+    }
+    .total-over-view{
+        padding-left: 25px;
+        color: #29c0b5;
+    }
+    .total-over-engagged{
+        padding-left: 25px;
+        color: #e6496a;
+    }
+    .row-statistic{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .custom-box-statistics{
+        background-color: #fff;
+        height: 116px;
+        width: 243px;
+        box-shadow: 1px 4px 12px 7px #e9e9e9;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .outer-pei-chart{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .outer-custom-box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .custom-flex-added{
+        display: flex;
+        border-right: 1px solid #efefef;
+        justify-content: center;
+    }
+    .custom-flex-added:last-child{
+        display: flex;
+        border-right: 0px solid #efefef;
+        justify-content: center;
+    }
+    .row-reviews-check{
+        margin-bottom: 30px;
+    }
+    .row-statistic-charts{
+        display: flex;
+        align-items: baseline;
+    }
+    .custom-peri-h2{
+        text-align: center;
+    }
+    .color1{
+        color: #743e84;
+    }
+    .color2{
+        color: #a9456f;
+    }
+    .color3{
+        color: #e39e65;
+    }
+    .color3-span{
+        color: #9b9c9c;
+    }
+    .color2-span{
+        color: #9b9c9c;
+    }
+    .color1-span{
+        color: #9b9c9c;
+    }
+    .box-1{
+        width: 57px;
+        height: 59px;
+        background-color:#743e84;
+        z-index: 99;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .box-2{
+        width: 57px;
+        height: 59px;
+        background-color:#a9456f;
+        z-index: 99;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .box-3{
+        width: 57px;
+        height: 59px;
+        background-color:#e39e65;
+        z-index: 99;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .inner-box{
+        display: flex;
+        align-items: center;
+    }
+    .custom-peri-h2{
+        font-weight: bold;
+    }
+/* end my campaign css */
+
+
+
+
+
+
+/* campaign responsive css */
+
+@media (max-width:1199px) {
+    .customP {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .customM8AC{
+        width: 100%;
+    }
+    .customM4AC{
+        width: 100%;
+    }
+    .customMd2 {
+        width: 100%;
+        padding-right: 5px;
+    }
+    .customMd4 {
+        padding-left: 25px;
+        padding-right: 5px;
+        width: 100%;
+    }
+    .customResponseQ{
+        display: block;
+    }
+}
+
+@media (max-width: 991px) {
+    .form-group {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .social-icons {
+        padding-right: 15px;
+        margin-bottom: 5px;
+    }
+    .customResponsiveQ{
+        display: flex;
+        flex-direction: column;
+    }
+    .customP-0 {
+        padding: 0px;
+        width: 100%;
+    }
+    .customMd4 {
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .social-icons-target {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-right: 10px;
+        justify-content: center;
+        margin-bottom: 12px;
+    }
+    .customMd4T {
+        width: 100%;
+        padding: 0px;
+    }
+    .customResQ{
+        display: block;
+    }
+    .customHandleClass label {
+        text-align: center;
+        width: 100%;
+    }
+    .customCampaignH2 {
+        padding: 0px 0px;
+        border-bottom: 3px solid #6d3d86;
+        margin: 12px 30px;
+        color: #454646;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .customMargin {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .custom-lL{
+        width: 100%;
+        text-align: center;
+    }
+    .customRow {
+        padding: 6px 20px;
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .row-reviews-check {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .statistic-outer {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+    .row-statistic-charts {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .custom-row-Cam {
+        margin-top: 25px;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    .customRPQ{
+        display: block;
+    }
+    .custom-flex {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+}
