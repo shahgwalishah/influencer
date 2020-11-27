@@ -166,8 +166,376 @@
                 <div class="col-md-7">
                     <h4 class="custom-peri-h2">Impressions Per Social Media Platform</h4>
                     <div class="outer-pei-chart">
-                        <div id="pie"></div>
+                        <canvas id="myChart"></canvas>
                     </div>
+                </div>
+            </div>
+            <br>
+            <div class="row customRow-social-stats">
+                <div class="custom-Md-4 col-md-4">
+                    <div class="social-box">
+                        <div class="social-div">
+                            <div class="social-icon">
+                                <img src="{{asset('assets/images/facebook.png')}}" style="width:30px;" />
+                            </div>
+                            <div class="total-likes">
+                                <p class="custom-p">12,284</p>
+                                <span class="total-avg">+08.21%</span>&nbsp;&nbsp;<span class="total-likes">Total Likes</span>
+                            </div>
+                        </div>
+                        <div class="progress-bar-social">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="bar-likes">
+                                        <span class="total-reach">REACH:</span> <span class="total-count">35,684</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="bar-posts">
+                                        <span class="total-reach">POSTS:</span> <span class="total-count">465</span>
+                                        <div class="progress">
+                                            <div class="progress-bar"  role="progressbar" aria-valuenow="70"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width:70%;background: #e39e65">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-z-indexx-down"></div>
+                </div>
+                <div class="custom-Md-4 col-md-4">
+                    <div class="social-box">
+                        <div class="social-div">
+                            <div class="social-icon">
+                                <img src="{{asset('assets/images/twitter.png')}}" style="width:30px;" />
+                            </div>
+                            <div class="total-likes">
+                                <p class="custom-p">12,284</p>
+                                <span class="total-avg">+08.21%</span>&nbsp;&nbsp;<span class="total-likes">Total Likes</span>
+                            </div>
+                        </div>
+                        <div class="progress-bar-social">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="bar-likes">
+                                        <span class="total-reach">REACH:</span> <span class="total-count">35,684</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="bar-posts">
+                                        <span class="total-reach">POSTS:</span> <span class="total-count">465</span>
+                                        <div class="progress">
+                                            <div class="progress-bar"  role="progressbar" aria-valuenow="70"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width:70%;background: #e39e65">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-z-indexx-down-2"></div>
+                </div>
+                <div class="custom-Md-4 col-md-4">
+                    <div class="social-box">
+                        <div class="social-div">
+                            <div class="social-icon">
+                                <img src="{{asset('assets/images/insta.png')}}" style="width:30px;" />
+                            </div>
+                            <div class="total-likes">
+                                <p class="custom-p">12,284</p>
+                                <span class="total-avg">+08.21%</span>&nbsp;&nbsp;<span class="total-likes">Total Likes</span>
+                            </div>
+                        </div>
+                        <div class="progress-bar-social">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="bar-likes">
+                                        <span class="total-reach">REACH:</span> <span class="total-count">35,684</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="bar-posts">
+                                        <span class="total-reach">POSTS:</span> <span class="total-count">465</span>
+                                        <div class="progress">
+                                            <div class="progress-bar"  role="progressbar" aria-valuenow="70"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width:70%;background: #e39e65">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-z-indexx-down-3"></div>
+                </div>
+            </div>
+            <div class="row customRow-social-stats">
+                <div class="custom-Md-4 col-md-4">
+                    <div class="social-box">
+                        <div class="social-div">
+                            <div class="social-icon">
+                                <img src="{{asset('assets/images/tiktok.png')}}" style="width:30px;" />
+                            </div>
+                            <div class="total-likes">
+                                <p class="custom-p">12,284</p>
+                                <span class="total-avg">+08.21%</span>&nbsp;&nbsp;<span class="total-likes">Total Likes</span>
+                            </div>
+                        </div>
+                        <div class="progress-bar-social">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="bar-likes">
+                                        <span class="total-reach">REACH:</span> <span class="total-count">35,684</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="bar-posts">
+                                        <span class="total-reach">POSTS:</span> <span class="total-count">465</span>
+                                        <div class="progress">
+                                            <div class="progress-bar"  role="progressbar" aria-valuenow="70"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width:70%;background: #e39e65">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-z-indexx-down-4"></div>
+                </div>
+                <div class="custom-Md-4 col-md-4">
+                    <div class="social-box">
+                        <div class="social-div">
+                            <div class="social-icon">
+                                <img src="{{asset('assets/images/you_tube.png')}}" style="width:30px;" />
+                            </div>
+                            <div class="total-likes">
+                                <p class="custom-p">12,284</p>
+                                <span class="total-avg">+08.21%</span>&nbsp;&nbsp;<span class="total-likes">Total Likes</span>
+                            </div>
+                        </div>
+                        <div class="progress-bar-social">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="bar-likes">
+                                        <span class="total-reach">REACH:</span> <span class="total-count">35,684</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="bar-posts">
+                                        <span class="total-reach">POSTS:</span> <span class="total-count">465</span>
+                                        <div class="progress">
+                                            <div class="progress-bar"  role="progressbar" aria-valuenow="70"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width:70%;background: #e39e65">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-z-indexx-down-5"></div>
+                </div>
+                <div class="custom-Md-4 col-md-4">
+                    <div class="social-box">
+                        <div class="social-div">
+                            <div class="social-icon">
+                                <img src="{{asset('assets/images/snap_chat.png')}}" style="width:30px;" />
+                            </div>
+                            <div class="total-likes">
+                                <p class="custom-p">12,284</p>
+                                <span class="total-avg">+08.21%</span>&nbsp;&nbsp;<span class="total-likes">Total Likes</span>
+                            </div>
+                        </div>
+                        <div class="progress-bar-social">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="bar-likes">
+                                        <span class="total-reach">REACH:</span> <span class="total-count">35,684</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="bar-posts">
+                                        <span class="total-reach">POSTS:</span> <span class="total-count">465</span>
+                                        <div class="progress">
+                                            <div class="progress-bar"  role="progressbar" aria-valuenow="70"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width:70%;background: #e39e65">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-z-indexx-down-6"></div>
+                </div>
+            </div>
+
+            <div class="row customRow-hash-tags">
+                <div class="hash-tags-heading">
+                    <h2 class="hash-tags-h2">HASHTAGS GALLERY</h2>
+                    <hr class="borderBottom">
+                    <p class="buster">#BRINGBLOCKBUSTERBACK</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="social-media-has-tashs">
+                            <img src="{{asset('assets/images/insta.png')}}" />
+                            <span>INSTAGRAM</span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="social-media-has-tashs">
+                            <img src="{{asset('assets/images/facebook.png')}}" />
+                            <span>FACEBOOK</span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="social-media-has-tashs">
+                            <img src="{{asset('assets/images/twitter.png')}}" />
+                            <span>TWITTER</span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="social-media-has-tashs">
+                            <img src="{{asset('assets/images/tiktok.png')}}" />
+                            <span>TIK TOK</span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="social-media-has-tashs">
+                            <img src="{{asset('assets/images/you_tube.png')}}" />
+                            <span>YOUTUBE</span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="social-media-has-tashs">
+                            <img src="{{asset('assets/images/snap_chat.png')}}" />
+                            <span>SNAPCHAT</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row custom-row-images">
+                            <div class="col-md-12" style="padding-left:0px;margin-bottom:6px;">
+                                <div class="col-md-2 customMd2-1">
+                                    <img class="customImage" src="https://www.gstatic.com/webp/gallery/1.jpg" />
+                                </div>
+                                <div class="col-md-2 customMd2-1">
+                                    <img class="customImage" src="https://www.gstatic.com/webp/gallery/2.webp" />
+                                </div>
+                                <div class="col-md-2 customMd2-1">
+                                    <img class="customImage" src="https://www.gstatic.com/webp/gallery/1.jpg" />
+                                </div>
+                                <div class="col-md-2 customMd2-1">
+                                    <img class="customImage" src="https://www.gstatic.com/webp/gallery/1.jpg" />
+                                </div>
+                                <div class="col-md-2 customMd2-1">
+                                    <img class="customImage" src="https://www.gstatic.com/webp/gallery/1.jpg" />
+                                </div>
+                                <div class="col-md-2 customMd2-1">
+                                    <img class="customImage" src="https://www.gstatic.com/webp/gallery/1.jpg" />
+                                </div>
+                            </div>
+                            <div class="col-md-12" style="padding-left:0px;margin-bottom:6px;">
+                                <div class="col-md-2 customMd2-1">
+                                    <img class="customImage" src="https://www.gstatic.com/webp/gallery/1.jpg" />
+                                </div>
+                                <div class="col-md-2 customMd2-1">
+                                    <img class="customImage" src="https://www.gstatic.com/webp/gallery/2.webp" />
+                                </div>
+                                <div class="col-md-2 customMd2-1">
+                                    <img class="customImage" src="https://www.gstatic.com/webp/gallery/1.jpg" />
+                                </div>
+                                <div class="col-md-2 customMd2-1">
+                                    <img class="customImage" src="https://www.gstatic.com/webp/gallery/1.jpg" />
+                                </div>
+                                <div class="col-md-2 customMd2-1">
+                                    <img class="customImage" src="https://www.gstatic.com/webp/gallery/1.jpg" />
+                                </div>
+                                <div class="col-md-2 customMd2-1">
+                                    <img class="customImage" src="https://www.gstatic.com/webp/gallery/1.jpg" />
+                                </div>
+                            </div>
+                            <div class="col-md-12" style="padding-left:0px;margin-bottom:6px;">
+                                <div class="col-md-2 customMd2-1">
+                                    <img class="customImage" src="https://www.gstatic.com/webp/gallery/1.jpg" />
+                                </div>
+                                <div class="col-md-2 customMd2-1">
+                                    <img class="customImage" src="https://www.gstatic.com/webp/gallery/2.webp" />
+                                </div>
+                                <div class="col-md-2 customMd2-1">
+                                    <img class="customImage" src="https://www.gstatic.com/webp/gallery/1.jpg" />
+                                </div>
+                                <div class="col-md-2 customMd2-1">
+                                    <img class="customImage" src="https://www.gstatic.com/webp/gallery/1.jpg" />
+                                </div>
+                                <div class="col-md-2 customMd2-1">
+                                    <img class="customImage" src="https://www.gstatic.com/webp/gallery/1.jpg" />
+                                </div>
+                                <div class="col-md-2 customMd2-1">
+                                    <img class="customImage" src="https://www.gstatic.com/webp/gallery/1.jpg" />
+                                </div>
+                            </div>
+                            <div class="col-md-12" style="padding-left:0px;margin-bottom:6px;">
+                                <div class="col-md-2 customMd2-1">
+                                    <img class="customImage" src="https://www.gstatic.com/webp/gallery/1.jpg" />
+                                </div>
+                                <div class="col-md-2 customMd2-1">
+                                    <img class="customImage" src="https://www.gstatic.com/webp/gallery/2.webp" />
+                                </div>
+                                <div class="col-md-2 customMd2-1">
+                                    <img class="customImage" src="https://www.gstatic.com/webp/gallery/1.jpg" />
+                                </div>
+                                <div class="col-md-2 customMd2-1">
+                                    <img class="customImage" src="https://www.gstatic.com/webp/gallery/1.jpg" />
+                                </div>
+                                <div class="col-md-2 customMd2-1">
+                                    <img class="customImage" src="https://www.gstatic.com/webp/gallery/1.jpg" />
+                                </div>
+                                <div class="col-md-2 customMd2-1">
+                                    <img class="customImage" src="https://www.gstatic.com/webp/gallery/1.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <button class="btn customizeBtn" id="btn5">LOAD MORE</button>
                 </div>
             </div>
         </div>
@@ -176,40 +544,33 @@
 @endsection
 
 @push('js')
-    <script src="{{asset('assets/js/jquery.rotapie.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script>
-        $(function(){
-            $('#pie').rotapie({
-                slices: [
-                    { color: '#006673', percentage: 10 }, // If color not set, slice will be transparant.
-                    { color: '#0294a8', percentage: 30 }, // Font color to render percentage defaults to 'color' but can be overriden by setting 'fontColor'.
-                    { color: '#77ccd1', percentage: 60 }
-                ],
-                sliceIndex: 0, // Start index selected slice.
-                deltaAngle: 0.2, // The rotation angle in radians between frames, smaller number equals slower animation.
-                minRadius: 100, // Radius of unselected slices, can be set to percentage of container width i.e. '50%'
-                maxRadius: 110, // Radius of selected slice, can be set to percentage of container width i.e. '45%'
-                minInnerRadius: 55, // Smallest radius inner circle when animated, set to 0 to disable inner circle, can be set to percentage of container width i.e. '35%'
-                maxInnerRadius: 65, // Normal radius inner circle, set to 0 to disable inner circle, can be set to percentage of container width i.e. '30%'
-                innerColor: '#fff', // Background color inner circle.
-                minFontSize: 30, // Smallest fontsize percentage when animated, set to 0 to disable percentage display, can be set to percentage of container width i.e. '20%'
-                maxFontSize: 40, // Normal fontsize percentage, set to 0 to disable percentage display, can be set to percentage of container width i.e. '10%'
-                fontYOffset: 0, // Vertically offset the percentage display with this value, can be set to percentage of container width i.e. '-10%'
-                fontFamily: 'Times New Roman', // FontFamily percentage display.
-                fontWeight: 'bold', // FontWeight percentage display.
-                decimalPoint: '.', // Can be set to comma or other symbol.
-                clickable: true // If set to true a user can select a different slice by clicking on it.
-                /*
-                beforeAnimate: function (nextIndex, settings) {
-                    var canvas = this;
-                    return false; // Cancel rotation
-                },
-                afterAnimate: function(settings){
-                    var canvas = this;
-                    var index = settings.sliceIndex; // Retrieve current index.
-                }
-                */
-            });
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'doughnut',
+
+            // The data for our dataset
+            data: {
+                labels: ['Red', 'Blue', 'Yellow'],
+                datasets: [{
+                    data: [10, 20, 30],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+            }
         });
     </script>
 @endpush
