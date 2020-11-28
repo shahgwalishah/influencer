@@ -41,6 +41,22 @@
             align-items: center;
             width: 65px;
         }
+        @media (max-width: 991px) {
+            .customTh{
+                position: unset !important;
+                height: 54px;
+                display: flex;
+                align-items: center;
+            }
+            .customThLast {
+                position: unset !important;
+                right: 45px;
+                height: 54px;
+                display: flex;
+                align-items: center;
+                width: 65px;
+            }
+        }
     </style>
 @endpush
 @section('head-nav-content')
