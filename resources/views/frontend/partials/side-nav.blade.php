@@ -13,16 +13,10 @@
             </div>
         </li>
         <li>
-            <a href="#" data-toggle="collapse" data-target="#submenu-2">
+            <a href="{{route('dashboard')}}" @if(Route::currentRouteName() == 'dashboard') class="active-class-side-nav-bar" style="color: #aaafb1 !important;" @endif>
                 Dashboard
                 <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
             </a>
-
-            <ul id="submenu-2" class="collapse">
-                <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.1</a></li>
-                <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.2</a></li>
-                <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.3</a></li>
-            </ul>
         </li>
         <li>
             <a href="{{route('add-campaign')}}" @if(Route::currentRouteName() == 'add-campaign') class="active-class-side-nav-bar" style="color: #aaafb1 !important;" @endif>

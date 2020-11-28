@@ -340,6 +340,22 @@
     font-weight: bold;
 }
 
+#btn5-1{
+    color: #fff;
+    background-color: #763f83;
+    padding: 3px 20px;
+    border-radius: 0px;
+    font-weight: bold;
+}
+
+#btn6{
+    color: #fff;
+    background-color: #d46d5d;
+    padding: 3px 20px;
+    border-radius: 0px;
+    font-weight: bold;
+}
+
 .btn4-custom{
     margin-left: 6px;
 }

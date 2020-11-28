@@ -14,11 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('dashboard');
 });
 
 //frontend routes
 $namespaceFrontend = 'App\Http\Controllers\Frontend';
+
+Route::get('/dashboard','App\Http\Controllers\DashboardController@dashboard')->name('dashboard');
 
 Route::namespace($namespaceFrontend)->group(function () {
     Route::get('/add-campaign','CampaignController@addCampaign')->name('add-campaign');
