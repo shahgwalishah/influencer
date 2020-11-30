@@ -5,8 +5,9 @@
             <h2 class="customSizeSideNavH2">
                 My Influencer Network
             </h2>
+
             <div class="asos-box">
-                <span>asos</span>
+                <img src="{{asset('bg.png')}}" style="border: 5px solid #efefef;border-radius: 100%;" />
             </div>
             <div class="asos-name">
                 <span>ASOS UK</span>
@@ -27,6 +28,12 @@
         <li>
             <a href="{{route('my-campaign')}}" @if(Route::currentRouteName() == 'my-campaign') class="active-class-side-nav-bar" style="color: #aaafb1 !important;" @endif>
                 My Campaigns
+                <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="{{route('brands')}}" @if(Route::currentRouteName() == 'brands') class="active-class-side-nav-bar" style="color: #aaafb1 !important;" @endif>
+                Brands
                 <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
             </a>
         </li>

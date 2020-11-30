@@ -364,7 +364,30 @@
     width: 100%;
     align-items: center;
 }
-
+.customBtn51{
+    position: relative;
+    top:1px;
+}
+#btn-customizable1{
+    background: #434343;
+    color: #fff;
+    font-size: 14px;
+    padding: 6px 16px;
+    font-weight: bold;
+}
+#btn-customizable{
+    background:#e5b46a;
+    color: #fff;
+    font-size: 14px;
+    padding: 6px 16px;
+    font-weight: bold;
+}
+#btn7{
+    background: #c6595e;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
 
 /*/ navbar responsive css /*/
 .web-view-side-bar{

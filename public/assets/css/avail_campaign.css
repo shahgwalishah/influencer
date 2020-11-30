@@ -1,0 +1,133 @@
+.customRow-Md8{
+    display: flex;
+    align-items: center;
+}
+.customBtn51{
+    height:30px;
+}
+.customBtn51-changeColor{
+    height:30px;
+    background: #ac456c !important;
+}
+.paragraph-avail{
+    margin: 0px;
+    margin-bottom: 10px;
+    color: #4d4c4b;
+    font-weight: bold;
+    font-size: 13px;
+}
+.custom-row-pD{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.image-avail{
+    margin-right: 8px;
+}
+.custom-md-3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    position: relative;
+    top: 6px;
+}
+.custom-display-on{
+    margin-right: 6px;
+}
+.custom-h2-avail {
+    color: #454646;
+    font-weight: bold;
+    font-size: 24px;
+}
+.custom-anchor-tag{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: #4f4e4f;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.customizable{
+    border-radius: 0px !important;
+}
+.buttons-btn-custom{
+    text-align: end;
+    position: absolute;
+    right: 0px;
+    bottom: 8px;
+}
+.cstomMd12{
+    text-align: center;
+}
+@media (max-width: 991px) {
+    .cstomMd12{
+        text-align: center;
+    }
+    .custom-anchor-tag {
+        position: unset;
+        top: 20px;
+        right: 10px;
+        color: #4f4e4f;
+        font-weight: bold;
+        text-decoration: underline;
+        text-align: center;
+        width: 100%;
+    }
+    .buttons-btn-custom {
+        position: unset;
+        right: 0px;
+        bottom: 8px;
+        text-align: center;
+    }
+    .customRow-Md8 {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+    .custom-md-3 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 200px;
+        position: relative;
+        top: 6px;
+        justify-content: center;
+    }
+    #btn-customizable {
+        background: #e5b46a;
+        color: #fff;
+        font-size: 14px;
+        padding: 6px 16px;
+        font-weight: bold;
+        margin-top: 8px;
+    }
+    .custom-h2-avail {
+        text-align: center;
+        color: #454646;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    .paragraph-avail {
+        margin: 0px;
+        margin-bottom: 10px;
+        color: #4d4c4b;
+        font-weight: bold;
+        font-size: 13px;
+        text-align: center;
+    }
+    .customMd9{
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    select{
+        margin-bottom: 10px;
+    }
+    .customRow-Md8 {
+        align-items: center;
+        text-align: center;
+        display: block;
+    }
+}

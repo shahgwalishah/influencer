@@ -25,4 +25,7 @@ Route::get('/dashboard','App\Http\Controllers\DashboardController@dashboard')->n
 Route::namespace($namespaceFrontend)->group(function () {
     Route::get('/add-campaign','CampaignController@addCampaign')->name('add-campaign');
     Route::get('/my-campaign','CampaignController@myCampaign')->name('my-campaign');
+    Route::get('/available-campaign','CampaignController@avilableCampaign')->name('available-campaign');
+    Route::get('/campaign-complete','CampaignController@campaignComplete')->name('campaignComplete');
+    Route::get('/brands','BrandController@brands')->name('brands');
 });

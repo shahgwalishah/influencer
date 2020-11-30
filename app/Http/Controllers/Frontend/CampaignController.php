@@ -16,4 +16,14 @@ class CampaignController extends Controller
     {
         return view('frontend.campaign.myCampaign');
     }
+
+    public function avilableCampaign()
+    {
+        return view('frontend.campaign.avail_campaign');
+    }
+
+    public function campaignComplete()
+    {
+        return view('frontend.campaign.complete_campaign');
+    }
 }
