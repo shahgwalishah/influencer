@@ -79,7 +79,7 @@
         .copy_paste{
             font-weight: bold;
             color: #733e83;
-            font-size: 18px;
+            font-size: 19px;
         }
         .custom_M{
             margin-bottom: 12px;
