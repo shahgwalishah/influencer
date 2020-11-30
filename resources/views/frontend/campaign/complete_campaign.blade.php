@@ -6,7 +6,7 @@
 
         }
         .customCampaignH2{
-            width: 100%;
+            width: 95%;
         }
         .customClassHr {
             width: 75%;
