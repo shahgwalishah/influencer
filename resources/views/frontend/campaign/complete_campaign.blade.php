@@ -99,6 +99,18 @@
             position: relative;
             top: -3px;
         }
+        .small-images{
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .small-images > img {
+            cursor: pointer;
+        }
+        .activated1{
+            border: 5px solid #733e83;
+            object-fit: cover;
+        }
     </style>
 @endpush
 @section('head-nav-content')
@@ -376,7 +388,17 @@
                         </p>
                     </div>
                     <div class="col-md-6">
-                        <img style="width: 100%;" src="{{asset('assets/images/asos-glaad@1X.png')}}" />
+                        <img style="width: 100%;height: 373px;" id="customImage12" src="{{asset('assets/images/asos-glaad@1X.png')}}" />
+                        <div class="small-images">
+                            <img class="imageA" id="i" onclick="functionChangeImage('a')" style="    margin-right: 5px;
+    margin-left: 5px;width: 80px;    height: 60px;" src="{{asset('assets/images/asos-glaad@1X.png')}}" />
+                            <img class="imageB" onclick="functionChangeImage('b')" style="    margin-right: 5px;
+    margin-left: 5px;width: 80px;    height: 60px;" src="{{asset('assets/images/123.jpg')}}" />
+                            <img class="imageC" onclick="functionChangeImage('c')" style="    margin-right: 5px;
+    margin-left: 5px;width: 80px;    height: 60px;" src="{{asset('assets/images/asos-glaad@1X.png')}}" />
+                            <img class="imageD" onclick="functionChangeImage('d')" style="    margin-right: 5px;
+    margin-left: 5px;width: 80px;    height: 60px;" src="{{asset('assets/images/123.jpg')}}" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -386,7 +408,46 @@
 
 @push('js')
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
+        $(document).ready(function () {
+            functionChangeImage('a');
+        });
+        function functionChangeImage(val) {
+            console.log('functionChangeImage');
+            let src;
+            if(val == 'a'){
+                src = $('.imageA').attr('src');
+                $('.imageB').removeClass('activated1');
+                $('.imageA').addClass('activated1');
+                $('.imageC').removeClass('activated1');
+                $('.imageD').removeClass('activated1');
+            }
+            if(val == 'b'){
+                src = $('.imageB').attr('src');
+                $('.imageA').removeClass('activated1');
+                $('.imageB').addClass('activated1');
+                $('.imageC').removeClass('activated1');
+                $('.imageD').removeClass('activated1');
+            }
+            if(val == 'c'){
+                src = $('.imageC').attr('src');
+                $('.imageA').removeClass('activated1');
+                $('.imageC').addClass('activated1');
+                $('.imageB').removeClass('activated1');
+                $('.imageD').removeClass('activated1');
+            }
+            if(val == 'd'){
+                src = $('.imageD').attr('src');
+                $('.imageA').removeClass('activated1');
+                $('.imageD').addClass('activated1');
+                $('.imageC').removeClass('activated1');
+                $('.imageB').removeClass('activated1');
+            }
+            $('#customImage12').attr('src',src);
+            console.log('src');
+            console.log(src);
+        }
         var ctx = document.getElementById('myChart').getContext('2d');
         var chart = new Chart(ctx, {
             // The type of chart we want to create

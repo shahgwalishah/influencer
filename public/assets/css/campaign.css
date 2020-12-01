@@ -518,6 +518,14 @@
 }
 
 @media (max-width: 991px) {
+    .custom_MM {
+        margin-top: 25px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .customCampaignH2 {
+        width: 90% !important;
+    }
     .page-content {
         padding: 10px;
         height: 100%;
@@ -658,9 +666,53 @@
         width: 100%;
         justify-content: space-between;
     }
+    .custom_M {
+        margin-bottom: 12px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 767px) {
+    .customCampaignH2 {
+        width: 86% !important;
+    }
+    #customImage12{
+        object-fit: cover !important;
+    }
+    .customCopyLink {
+        display: block;
+        text-align: center;
+    }
+    .custom_btn5_5 {
+        left: 0px !important;
+        font-size: 12px;
+        height: 32px !important;
+        position: relative;
+        top: 0px !important;
+        width: 100% !important;
+    }
+    .customCopyLink {
+        display: block !important;
+        text-align: center;
+    }
+    .custom_btn5 {
+        position: relative;
+        left: 0px !important;
+        font-size: 12px;
+        top: 5px;
+        height: 32px !important;
+        width: 100% !important;
+    }
+    .box-social-box {
+        display: block !important;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    .box-social-box-outer {
+        box-shadow: 1px 4px 12px 7px #e0e7eb;
+        padding: 20px;
+        text-align: center;
+    }
     .row-reviews-check {
         margin-bottom: 30px;
         display: flex;
@@ -681,6 +733,11 @@
 }
 
 @media (max-width: 576px) {
+    .customCopyLink {
+        display: block !important;
+        text-align: center;
+        word-wrap: break-word !important;
+    }
     .custom-row-Cam {
         margin-top: 25px;
         display: block;
