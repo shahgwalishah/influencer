@@ -26,4 +26,9 @@ class CampaignController extends Controller
     {
         return view('frontend.campaign.complete_campaign');
     }
+
+    public function campaignDetail()
+    {
+        return view('frontend.campaign.detail');
+    }
 }

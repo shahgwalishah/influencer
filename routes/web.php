@@ -27,5 +27,6 @@ Route::namespace($namespaceFrontend)->group(function () {
     Route::get('/my-campaign','CampaignController@myCampaign')->name('my-campaign');
     Route::get('/available-campaign','CampaignController@avilableCampaign')->name('available-campaign');
     Route::get('/campaign-complete','CampaignController@campaignComplete')->name('campaignComplete');
+    Route::get('/campaign-detail','CampaignController@campaignDetail')->name('campaignDetail');
     Route::get('/brands','BrandController@brands')->name('brands');
 });
