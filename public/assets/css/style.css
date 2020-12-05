@@ -312,6 +312,7 @@
     background-color: #e4a867;
     color: #fff;
     font-weight: bold;
+    border: 0px;
 }
 #btn2{
     background-color: #ac456c;
@@ -389,6 +390,15 @@
     font-weight: bold;
 }
 
+#btn2-1{
+    background: #434343;
+    padding: 6px 16px;
+    color: #fff;
+    font-size: 14px;
+    border: 0px;
+    font-weight: bold;
+}
+
 /*/ navbar responsive css /*/
 .web-view-side-bar{
     display: block;
@@ -432,7 +442,7 @@
     list-style: none;
     display: flex;
     margin-bottom: 0px;
-    padding-left: 0px;
+    padding-left: 20px;
 }
 .customUlNav li {
     color: #434343 !important;
@@ -442,5 +452,6 @@
 .customUlNav li a{
     font-weight: bold;
     color: #434343 !important;
-    font-size: 16px;
+    font-size: 20px;
 }
+

@@ -31,4 +31,19 @@ class CampaignController extends Controller
     {
         return view('frontend.campaign.detail');
     }
+
+    public function campaignDashboard()
+    {
+        return view('frontend.campaign.dashboard');
+    }
+
+    public function myCampaignLists()
+    {
+        return view('frontend.campaign.campaign_list');
+    }
+
+    public function soonCampaign()
+    {
+        return view('frontend.campaign.coming_soon');
+    }
 }
