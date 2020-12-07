@@ -1,0 +1,433 @@
+.Md2-1 > h1{
+    font-size: 130pt;
+    color: #c9d6da;
+    padding-left: 30px;
+    margin: 0px;
+    font-weight: bold;
+}
+.Md2-1{
+    width: 100%;
+    height: 800px;
+    background-color: #e5edef;
+    z-index: 99;
+}
+.customCMd2{
+    position: relative;
+    right: 75px;
+}
+.Md2-2{
+    width: 255px;
+    height: 800px;
+    background-color: #376d7b;
+    z-index: 9999;
+    font-weight: bold;
+}
+.Md2-2 > h1{
+    font-size: 130pt;
+    color: #e5edef;
+    text-align: end;
+    margin: 0px;
+    padding-right: 40px;
+}
+.Md8-8{
+
+}
+.customMd8{
+    color: #e5edef;
+    font-size: 48px;
+    width: 55%;
+    font-weight: bold;
+}
+.customMd6{
+    color: #e5edef;
+    font-size: 48px;
+    width: 80%;
+    font-weight: bold;
+}
+.small-box{
+    width: 67px;
+    height: 67px;
+    background-color: #376d7b;
+    border-radius: 100px;
+    margin-bottom: 40px;
+}
+.labelCustom{
+    color: #202121;
+    font-size: 15px;
+    font-weight: normal;
+}
+.customInputBox{
+    width: 497px;
+    height: 48px;
+    border-radius: 30px;
+}
+.customInputBox1{
+    height: 48px;
+    border-radius: 30px;
+}
+.customMd4W{
+    width: 205px;
+}
+#customBTnNext{
+    background-color: #376d7b;
+    color: #fff;
+    height: 48px;
+    width: 112px;
+    position: relative;
+    top: 12px;
+    border-radius: 30px;
+}
+#customBTnNext12{
+    background-color: #376d7b;
+    color: #fff;
+    height: 48px;
+    width: 112px;
+    position: relative;
+    top: -15px;
+    border-radius: 30px;
+    left: 15px;
+    border-radius: 30px;
+}
+.styled-select > select {
+    font-size: 11px;
+    left: 0;
+    top: 0;
+}
+.styled-select {
+}
+@media (max-width: 1199px) {
+    .custom12Md1234{
+        flex-direction: column !important;
+    }
+    .customMd6-1{
+        width: 100%;
+    }
+    .customMd6-2{
+        width: 100%;
+    }
+    .customMd8 {
+        color: #e5edef;
+        font-size: 48px;
+        width: 100%;
+        font-weight: bold;
+        text-align: center;
+    }
+    .Md8-8 {
+        text-align: center;
+    }
+    .customInputBox {
+        width: 100%;
+        height: 48px;
+        border-radius: 30px;
+    }
+    .customMd4W {
+        width: 100%;
+    }
+    .customBtnWR{
+        display: flex;
+        align-items: center;
+        flex-direction: column !important;
+    }
+    .small-box {
+        width: 67px;
+        height: 67px;
+        background-color: #376d7b;
+        border-radius: 100px;
+        margin-bottom: 40px;
+        display: inline-block;
+    }
+    .Md8-8 {
+        text-align: center;
+        padding: 0px !important;
+    }
+}
+@media (max-width: 991px) {
+    .btn-btn {
+        width: 100% !important;
+        text-align: end;
+        display: inline-block;
+    }
+    .customBtnNext {
+        width: 100% !important;
+        text-align: end;
+    }
+    .setFlex {
+        display: flex;
+        flex-direction: column;
+    }
+    .customMd6-2 {
+        text-align: center;
+    }
+    .bgColor1 {
+        background-color: #b26f55;
+        height: 1008px;
+        display: flex;
+        justify-content: center;
+        padding: 45px 45px;
+        flex-direction: column;
+        align-items: center !important;
+    }
+    .customFlex12{
+
+    }
+    .customInputC {
+        border-radius: 25px;
+        width: 100% !important;
+        height: 47px;
+        margin: 0px !important;
+        margin-bottom: 20px !important;
+    }
+    .customFlex12 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column !important;
+    }
+    .customInput {
+        width: 100% !important;
+        height: 47px;
+        border-radius: 25px;
+        display: inline-block;
+        border: 1px solid #ccc;
+    }
+    .customWH {
+        width: 100% !important;
+        height: 48px;
+        border-radius: 25px;
+        margin-bottom: 15px;
+    }
+    .small-box {
+        width: 67px;
+        height: 67px;
+        background-color: #376d7b;
+        border-radius: 100px;
+        margin-bottom: 40px;
+        display: inline-block;
+    }
+    .customBtnWR {
+        display: flex;
+        align-items: center;
+        flex-direction: column !important;
+        margin-bottom: 50px;
+    }
+    .Md2-1 {
+        width: 100%;
+        height: 800px;
+        background-color: #e5edef;
+        z-index: 99;
+        display: none;
+    }
+    .Md2-2 {
+        width: 255px;
+        height: 800px;
+        background-color: #376d7b;
+        z-index: 9999;
+        display: none;
+    }
+    .customMd8 {
+        color: #e5edef;
+        font-size: 48px;
+        width: 100%;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 70px;
+    }
+    .customWidthtab2 {
+        width: 100% !important;
+    }
+    .Md8-8 {
+        text-align: center;
+        padding: 0px !important;
+    }
+    .customBoxMd3 {
+        position: relative;
+        top: 30px;
+        padding: 0px;
+        margin: 20px;
+    }
+    .customBoxMd3 {
+        position: relative;
+        top: 50px !important;
+        padding: 0px;
+    }
+    #customBTnNext12 {
+        background-color: #376d7b;
+        color: #fff;
+        height: 48px;
+        width: 112px;
+        position: relative;
+        top: -15px;
+        border-radius: 30px;
+        left: 4px;
+        border-radius: 30px;
+    }
+    .customMd6 {
+        color: #e5edef;
+        font-size: 48px;
+        width: 100%;
+        font-weight: bold;
+    }
+}
+.labelCustomTb2{
+    font-weight: bold;
+    color: #000;
+}
+.normalLabel{
+    font-weight: normal;
+    color: #000;
+}
+.customWidthtab2{
+    width: 262px;
+}
+.customInputBoxTab2{
+    border-radius: 30px;
+    height: 50px;
+}
+.customMd12{
+    display: flex !important;
+}
+.customMargin{
+    margin-right: 10px !important;
+}
+.md3Box{
+    background-color: #96c1cc;
+    padding: 30px 6px;
+    height:364px;
+}
+.customBoxMd3{
+    position: relative;
+    top: 235px;
+    padding: 0px;
+}
+.h2-Price {
+    color: #fff;
+    font-weight: bold;
+    margin: 8px;
+    margin-bottom: 20px;
+}
+.span-plan-text{
+    color: #fff;
+    font-size: 20px;
+}
+.span-plan{
+    color: #fff;
+}
+.bgColor1{
+    background-color: #b26f55;
+    height: 1008px;
+    display: flex;
+    justify-content: center;
+    padding: 45px 45px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.changeColor{
+    color: #b26f55 !important;
+}
+.changeColorBg{
+    background-color: #e0c5bb !important;
+}
+.customh1B{
+    font-size: 198pt;
+    color: rgba(229, 237, 239, 255);
+    text-align: center;
+    font-weight: bold;
+}
+.customInput{
+    width: 496px;
+    height: 47px;
+    border-radius: 25px;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+.customLabelColor{
+    color: #fff;
+    font-weight: normal;
+    font-size: 17px;
+}
+.customInputC{
+    border-radius: 25px;
+    width: 137px;
+    height: 47px;
+}
+.customFlex12{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.customFormGroup{
+    margin-bottom: 25px;
+}
+.changeColor2{
+    color: #f5edeb !important;
+}
+.changeColor3{
+    background-color: #b26f55 !important;
+}
+.customWH{
+    width: 236px;
+    height: 48px;
+    border-radius: 25px;
+}
+.setFlex{
+    display: flex;
+}
+.customForm{
+    position: relative;
+    top:35px;
+}
+#custombtnBrown{
+    width: 159px;
+    height: 48px;
+    border-radius: 25px;
+    color: #ffffff;
+    background-color: #b26f55;
+    font-weight: normal;
+}
+.customCol12Md{
+    display: flex;
+    flex-direction: column;
+}
+.customBtnNext{
+    width: 530px;
+    text-align: end;
+}
+.c1 > p{
+    color: #fff;
+    text-align: right;
+    margin-right: 15px;
+}
+.c2 > p{
+    color: #000;
+    text-align: left;
+    margin-left: 15px;
+}
+.c2{
+    margin-bottom: 8px;
+    display: flex;
+}
+.c1{
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+.csu2{
+    position: relative;
+    top: 93px;
+}
+.c3 > p {
+    color: #000;
+    margin-left: 15px;
+}
+.c3{
+    display: flex;
+}
+.csu3{
+    position: relative;
+    top:80px;
+}
+.btn-btn{
+    width: 490px;
+    text-align: end;
+    display: inline-block;
+}

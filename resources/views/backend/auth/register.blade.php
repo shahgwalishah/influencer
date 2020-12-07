@@ -1,162 +1,6 @@
 @extends('backend.layouts.default')
 @push('css')
-    <style>
-        .Md2-1 > h1{
-            font-size: 130pt;
-            color: #c9d6da;
-            padding-left: 30px;
-            margin: 0px;
-            font-weight: bold;
-        }
-        .Md2-1{
-            width: 100%;
-            height: 800px;
-            background-color: #e5edef;
-            z-index: 99;
-        }
-        .customCMd2{
-            position: relative;
-            right: 75px;
-        }
-        .Md2-2{
-            width: 255px;
-            height: 800px;
-            background-color: #376d7b;
-            z-index: 9999;
-            font-weight: bold;
-        }
-        .Md2-2 > h1{
-            font-size: 130pt;
-            color: #e5edef;
-            text-align: end;
-            margin: 0px;
-            padding-right: 40px;
-        }
-        .Md8-8{
-
-        }
-        .customMd8{
-            color: #e5edef;
-            font-size: 48px;
-            width: 55%;
-            font-weight: bold;
-        }
-        .small-box{
-            width: 67px;
-            height: 67px;
-            background-color: #376d7b;
-            border-radius: 100px;
-            margin-bottom: 40px;
-        }
-        .labelCustom{
-            color: #202121;
-            font-size: 15px;
-            font-weight: normal;
-        }
-        .customInputBox{
-            width: 497px;
-            height: 48px;
-            border-radius: 30px;
-        }
-        .customInputBox1{
-            height: 48px;
-            border-radius: 30px;
-        }
-        .customMd4W{
-            width: 205px;
-        }
-        #customBTnNext{
-            background-color: #376d7b;
-            color: #fff;
-            height: 48px;
-            width: 112px;
-            position: relative;
-            top: 12px;
-            border-radius: 30px;
-        }
-        .styled-select > select {
-            font-size: 11px;
-            left: 0;
-            top: 0;
-        }
-        .styled-select {
-        }
-        @media (max-width: 1199px) {
-            .customMd8 {
-                color: #e5edef;
-                font-size: 48px;
-                width: 100%;
-                font-weight: bold;
-                text-align: center;
-            }
-            .Md8-8 {
-                text-align: center;
-            }
-            .customInputBox {
-                width: 100%;
-                height: 48px;
-                border-radius: 30px;
-            }
-            .customMd4W {
-                width: 100%;
-            }
-            .customBtnWR{
-                display: flex;
-                align-items: center;
-                flex-direction: column !important;
-            }
-            .small-box {
-                width: 67px;
-                height: 67px;
-                background-color: #376d7b;
-                border-radius: 100px;
-                margin-bottom: 40px;
-                display: inline-block;
-            }
-        }
-        @media (max-width: 991px) {
-            .small-box {
-                width: 67px;
-                height: 67px;
-                background-color: #376d7b;
-                border-radius: 100px;
-                margin-bottom: 40px;
-                display: inline-block;
-            }
-            .customBtnWR {
-                display: flex;
-                align-items: center;
-                flex-direction: column !important;
-                margin-bottom: 50px;
-            }
-            .Md2-1 {
-                width: 100%;
-                height: 800px;
-                background-color: #e5edef;
-                z-index: 99;
-                display: none;
-            }
-            .Md2-2 {
-                width: 255px;
-                height: 800px;
-                background-color: #376d7b;
-                z-index: 9999;
-                display: none;
-            }
-            .customMd8 {
-                color: #e5edef;
-                font-size: 48px;
-                width: 100%;
-                font-weight: bold;
-                text-align: center;
-                margin-top: 70px;
-            }
-        }
-        .labelCustomTb2{
-            font-weight: bold;
-            color: #000;
-        }
-    </style>
+    <link href="{{asset('assets/css/register.css')}}" rel="stylesheet" />
 @endpush
 
 @section('content')
@@ -271,13 +115,13 @@
         </div>
     </div>
     <div class="customCMd2 col-md-1">
-        <div class="Md2-2">
+        <div class="Md2-2" style="width:210px;">
             <h1>3</h1>
         </div>
     </div>
-    <div class="col-md-8">
-        <div class="Md8-8" style="padding-left: 100px;">
-            <h1 class="customMd8">ADD YOUR BILLING DETAILS</h1>
+    <div class="col-md-6">
+        <div class="Md8-8" style="padding-left: 60px;">
+            <h1 class="customMd6">ADD YOUR BILLING DETAILS</h1>
             <div class="small-box">
             </div>
             <div class="form">
@@ -296,7 +140,7 @@
                                 <input type="text" class="customInputBox form-control" placeholder="Name on card" />
                             </div>
                             <div class="col-md-12" style="margin-bottom: 20px;">
-                                <input type="text" class="customInputBox form-control" placeholder="Name on card" />
+                                <input type="text" class="customInputBox form-control" placeholder="Card Number" />
                             </div>
                             <div class="col-md-12" style="margin-bottom: 20px;display: flex;">
                                 <input type="text" class="customInputBox form-control" style="margin-right: 12px;width: 100px;" placeholder="Expiry Date" />
@@ -304,7 +148,255 @@
                             </div>
                         </div>
                     </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label class="labelCustomTb2">BILLING ADDRESS</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label class="normalLabel">Address 1</label>
+                                <input type="text" class="customInputBox form-control" placeholder="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label class="normalLabel">Address 2</label>
+                                <input type="text" class="customInputBox form-control" placeholder="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3 customWidthtab2">
+                                <label class="normalLabel">Postcode</label>
+                                <input type="text" class="customInputBoxTab2 form-control" placeholder="" />
+                            </div>
+                            <div class="col-md-3 customWidthtab2">
+                                <label class="normalLabel">Postcode</label>
+                                <input type="text" class="customInputBoxTab2 form-control" placeholder="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12 customMd12">
+                                <input type="checkbox" class="customMargin" name="checkbox" />
+                                <span>I agree to Sales Terms and Conditions and Privacy Policy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-12 customMd12">
+                                <input type="checkbox" class="customMargin" name="checkbox" />
+                                <span>I’d like to receive email newsletters and tips to help me get the most out of my monthly plan</span>
+                                <button class="btn" id="customBTnNext12" onclick="gotToNext('3')">NEXT</button>
+                            </div>
+                        </div>
+                    </div>
                 </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2 customBoxMd3">
+        <div class="md3Box text-center">
+            <span class="span-plan-text">PLAN B</span>
+            <h2 class="h2-Price">£150</h2>
+            <p class="span-plan">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="row" id="tab3" style="display: none;">
+    <div class="col-md-12 custom12Md1234" style="padding:0px;display: flex;align-items: center;">
+        <div class="col-md-6 customMd6-1">
+            <div class="bgColor1">
+                <h1 class="customh1B">1</h1>
+                <form>
+                    <div class="form-group customFormGroup">
+                        <div class="row text-right">
+                            <label class="customLabelColor">What’s your email address?</label>
+                            <input type="text" class="customInput" name="" />
+                        </div>
+                    </div>
+                    <div class="form-group customFormGroup">
+                        <div class="row text-right">
+                            <label class="customLabelColor">What is your gender?</label>
+                            <select class="customInput form-control">
+                                <option selected disabled>Select</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Both</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group customFormGroup">
+                        <div class="row text-right">
+                            <label class="customLabelColor">What’s your date of birth?</label>
+                            <div class="customFlex12">
+                                <select class="customInputC form-control" style="margin-right:40px;">
+                                    <option selected disabled>Select</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Both</option>
+                                </select>
+                                <select class="customInputC form-control" style="margin-right:40px;">
+                                    <option selected disabled>Select</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Both</option>
+                                </select>
+                                <select class="customInputC form-control">
+                                    <option selected disabled>Select</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Both</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6 customMd6-2">
+            <h1 class="customMd6">TELL US ABOUT YOURSELF</h1>
+            <div class="small-box">
+            </div>
+            <form class="customForm">
+                <div class="form-group customFormGroup">
+                    <div class="row">
+                        <div class="col-md-12 customCol12Md">
+                            <label class="normalLabel">What’s your name?</label>
+                            <div class="flex setFlex">
+                                <input type="text" name="text" style="margin-right: 20px;" class="customWH form-control" />
+                                <input type="text" name="text" class="customWH form-control" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group customFormGroup">
+                    <div class="row">
+                        <div class="col-md-12 customCol12Md">
+                            <label class="normalLabel">Where are you based (city)?</label>
+                            <select class="customInput form-control">
+                                <option selected disabled>Select</option>
+                                <option>Multan</option>
+                                <option>Lahore</option>
+                                <option>Islamabad</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group customFormGroup">
+                    <div class="row">
+                        <div class="col-md-12 customCol12Md">
+                            <label class="normalLabel">Which Languages do you speak? (select multiple)</label>
+                            <select class="customInput form-control">
+                                <option selected disabled>Select</option>
+                                <option>Multan</option>
+                                <option>Lahore</option>
+                                <option>Islamabad</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-12 customBtnNext">
+                            <button type="button" class="btn" id="custombtnBrown" onclick="gotToNext('4')">NEXT</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="row" id="tab4" style="display: none;">
+    <div class="col-md-12 custom12Md1234" style="padding:0px;display: flex;align-items: center;">
+        <div class="col-md-6 customMd6-1">
+            <div class="bgColor1">
+                <h1 class="customh1B">3</h1>
+                <div class="form-group customFormGroup csu">
+                    <div class="c1">
+                        <p>Fashion</p>
+                        <input type="checkbox" name="check" />
+                    </div>
+                    <div class="c1">
+                        <p>Beauty</p>
+                        <input type="checkbox" name="check" />
+                    </div>
+                    <div class="c1">
+                        <p>Fitness</p>
+                        <input type="checkbox" name="check" />
+                    </div>
+                    <div class="c1">
+                        <p>Healthy / Lifestyle</p>
+                        <input type="checkbox" name="check" />
+                    </div>
+                    <div class="c1">
+                        <p>Tourism / Travel</p>
+                        <input type="checkbox" name="check" />
+                    </div>
+                    <div class="c1">
+                        <p>Photography</p>
+                        <input type="checkbox" name="check" />
+                    </div>
+                    <div class="c1">
+                        <p>Food and Drink</p>
+                        <input type="checkbox" name="check" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 customMd6-2">
+            <h1 class="customMd6">TELL US ABOUT YOURSELF</h1>
+            <div class="small-box">
+            </div>
+            <div class="form-group customFormGroup csu2">
+                <div class="c2">
+                    <input type="checkbox" name="check" />
+                    <p>Movies</p>
+                </div>
+                <div class="c2">
+                    <input type="checkbox" name="check" />
+                    <p>Jewellery</p>
+                </div>
+                <div class="c2">
+                    <input type="checkbox" name="check" />
+                    <p>Music</p>
+                </div>
+                <div class="c2">
+                    <input type="checkbox" name="check" />
+                    <p>Gaming</p>
+                </div>
+                <div class="c2">
+                    <input type="checkbox" name="check" />
+                    <p>Gambling / Restricted Content</p>
+                </div>
+                <div class="c2">
+                    <input type="checkbox" name="check" />
+                    <p>Anything / All of the Above</p>
+                </div>
+            </div>
+            <div class="form-group customFormGroup csu3">
+                <div class="c3">
+                    <input type="checkbox" name="checkbox" />
+                    <p>I agree to Influencia’s Privacy Policy and Website Terms and Conditions</p>
+                </div>
+                <div class="c3">
+                    <input type="checkbox" name="checkbox" />
+                    <p>I’d like to receive email newsletters and offers from My Influencer Network</p>
+                </div>
+                <div class="btn-btn">
+                    <button class="btn" id="custombtnBrown">NEXT</button>
+                </div>
             </div>
         </div>
     </div>
@@ -314,12 +406,31 @@
 @push('js')
 <script>
     $(document).ready(function () {
-        gotToNext(1);
+        // gotToNext(1);
     });
     function gotToNext(val) {
         if(val == '2') {
             $('#tab1').hide();
             $('#tab2').show();
+        }
+        if(val == '3') {
+            $('.customUl li a').addClass('changeColor');
+            $('#btnLogin').addClass('changeColorBg');
+            $('.customMd6').addClass('changeColor2');
+            $('.small-box').addClass('changeColor3');
+            $('#tab1').hide();
+            $('#tab2').hide();
+            $('#tab3').show();
+        }
+        if(val == '4') {
+            $('.customUl li a').addClass('changeColor');
+            $('#btnLogin').addClass('changeColorBg');
+            $('.customMd6').addClass('changeColor2');
+            $('.small-box').addClass('changeColor3');
+            $('#tab1').hide();
+            $('#tab2').hide();
+            $('#tab3').hide();
+            $('#tab4').show();
         }
     }
 </script>

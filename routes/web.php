@@ -40,5 +40,6 @@ $namespaceAuthRoutes = 'App\Http\Controllers\Backend';
 
 Route::namespace($namespaceAuthRoutes)->group(function () {
     Route::get('/login-page','AuthController@loginPage')->name('loginPage');
+    Route::get('/register-page','AuthController@registerPage')->name('registerPage');
 });
 
