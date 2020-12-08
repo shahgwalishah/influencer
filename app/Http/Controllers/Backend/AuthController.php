@@ -11,6 +11,6 @@ class AuthController extends Controller
         dd('stop in_progress');
     }
     public function registerPage(){
-        return view('backend.auth.register');
+        return view('auth.register');
     }
 }

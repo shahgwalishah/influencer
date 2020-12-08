@@ -13,6 +13,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        $this->call(SocialNetWorkSeeder::class);
+        $this->call(InterestNetwork::class);
         // \App\Models\User::factory(10)->create();
     }
 }
