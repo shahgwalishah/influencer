@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Campaign;
 use App\Models\Interest;
 use App\Models\SocialNetWorks;
 use Illuminate\Http\Request;
@@ -19,6 +20,11 @@ class CampaignController extends Controller
         ]);
     }
 
+    public function creatCampaign(Request $request){
+        $data = Campaign::createCampaign($request);
+        return back()->with('success_message','Campaign Created Successfully');
+    }
+
     public function getInterests(){
         $interest = Interest::all();
         return response()->json($interest);
@@ -32,6 +38,14 @@ class CampaignController extends Controller
     public function myCampaign()
     {
         return view('frontend.campaign.myCampaign');
+    }
+
+    public function listCampaign()
+    {
+        $campaign = Campaign::all();
+        return view('frontend.campaign.list',[
+            'campaigns' => $campaign
+        ]);
     }
 
     public function avilableCampaign()

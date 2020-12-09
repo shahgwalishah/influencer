@@ -15,6 +15,9 @@ class Campaign extends Model
     const NUMBER_OF_FOLLOWERS_TIK_TOK = 4;
     const NUMBER_OF_FOLLOWERS_YOU_TUBE = 5;
     const NUMBER_OF_FOLLOWERS_SNAP_CHAT = 6;
+    const CAMPAIGN_HIDE = 0;
+    const CAMPAIGN_SHOW = 1;
+    const CAMPAIGN_DRAFT = 2;
 
     public static function NumberOfFollowers(){
         return  [
@@ -42,4 +45,22 @@ class Campaign extends Model
         'city',
         'interest'
     ];
+
+    public static function createCampaign($request){
+        return self::create([
+            'name' => isset($request->campaign_name) ? $request->campaign_name : 'aa',
+            'description' => $request->description,
+            'hash_tags' => json_encode($request->hash_tag_description),
+            'sector' => $request->sector,
+            'start_date' => $request->start_date,
+            'end_date' => $request->end_date,
+            'promo' => $request->promo_code,
+            'display_on' => json_encode($request->social_net_works),
+            'gender' => $request->gender,
+            'age' => $request->age,
+            'country' => $request->country,
+            'city' => $request->city,
+            'interest' => json_encode($request->interests)
+        ]);
+    }
 }

@@ -35,6 +35,6 @@ class AppServiceProvider extends ServiceProvider
 //        dd(Artisan::call('command:migrate'));
 //        dd(app()->runningInConsole());
 //        $this->filesTrait();
-        User::observe(UserObserver::class);
+//        User::observe(UserObserver::class);
     }
 }

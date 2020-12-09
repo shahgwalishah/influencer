@@ -24,6 +24,7 @@ Route::get('/dashboard','App\Http\Controllers\DashboardController@dashboard')->n
 
 Route::namespace($namespaceFrontend)->group(function () {
     Route::get('/add-campaign','CampaignController@addCampaign')->name('add-campaign');
+    Route::post('/create-campaign','CampaignController@creatCampaign')->name('creatCampaign');
     Route::get('/get-interests','CampaignController@getInterests')->name('getInterests');
     Route::get('/get-networks','CampaignController@getNetWorks')->name('getNetWorks');
     Route::get('/my-campaign','CampaignController@myCampaign')->name('my-campaign');
@@ -35,6 +36,8 @@ Route::namespace($namespaceFrontend)->group(function () {
     Route::get('/campaign-dashboard','CampaignController@campaignDashboard')->name('campaignDashboard');
     Route::get('/brands','BrandController@brands')->name('brands');
     Route::get('/add-country','CommonController@addCountry')->name('addCountry');
+    Route::get('/list-campaign','CampaignController@listCampaign')->name('listCampaign');
+    Route::get('/campaign','CommonController@addCountry')->name('Campaign');
     Route::get('/add-city','CommonController@addCity')->name('addCity');
 });
 
