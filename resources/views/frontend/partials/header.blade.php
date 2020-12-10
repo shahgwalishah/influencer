@@ -17,7 +17,7 @@
         </a>
     </li>
     <li>
-        <a href="#" class="bottomLine">
+        <a href="{{route('logout_user')}}" class="bottomLine">
             <span class="head-bar-li">LOGOUT</span>
         </a>
     </li>

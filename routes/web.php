@@ -20,9 +20,9 @@ Route::get('/', function () {
 //frontend routes
 $namespaceFrontend = 'App\Http\Controllers\Frontend';
 
-Route::get('/dashboard','App\Http\Controllers\DashboardController@dashboard')->name('dashboard');
+Route::get('/dashboard','App\Http\Controllers\DashboardController@dashboard')->name('dashboard')->middleware('auth_check');
 
-Route::namespace($namespaceFrontend)->group(function () {
+Route::namespace($namespaceFrontend)->middleware(['auth'])->group(function () {
     Route::get('/add-campaign','CampaignController@addCampaign')->name('add-campaign');
     Route::post('/create-campaign','CampaignController@creatCampaign')->name('creatCampaign');
     Route::get('/get-interests','CampaignController@getInterests')->name('getInterests');
@@ -37,7 +37,6 @@ Route::namespace($namespaceFrontend)->group(function () {
     Route::get('/brands','BrandController@brands')->name('brands');
     Route::get('/add-country','CommonController@addCountry')->name('addCountry');
     Route::get('/list-campaign','CampaignController@listCampaign')->name('listCampaign');
-    Route::get('/campaign','CommonController@addCountry')->name('Campaign');
     Route::get('/add-city','CommonController@addCity')->name('addCity');
 });
 
@@ -47,7 +46,10 @@ $namespaceAuthRoutes = 'App\Http\Controllers\Backend';
 
 Route::namespace($namespaceAuthRoutes)->group(function () {
     Route::get('/login-page','AuthController@loginPage')->name('loginPage');
+    Route::post('/login-post','AuthController@loginPost')->name('loginPost');
     Route::get('/register-page','AuthController@registerPage')->name('registerPage');
+    Route::get('/logout-out', 'AuthController@logOut')->name('logout_user');
+    Route::get('/reset-password', 'AuthController@resetPassword')->name('resetPassword');
 });
 
 

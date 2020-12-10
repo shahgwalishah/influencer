@@ -405,7 +405,7 @@
 </div>
 @endsection
 @push('js')
-    <script src="//code.jquery.com/jquery.min.js"></script>
+{{--    <script src="//code.jquery.com/jquery.min.js"></script>--}}
     <script src="{{asset('assets/tagify/dist/jQuery.tagify.min.js')}}"></script>
     <script src="{{asset('assets/tagify/dist/tagify.min.js')}}"></script>
     <script>
